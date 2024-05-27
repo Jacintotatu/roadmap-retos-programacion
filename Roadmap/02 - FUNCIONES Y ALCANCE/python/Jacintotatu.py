@@ -20,3 +20,23 @@
  * Presta especial atención a la sintaxis que debes utilizar en cada uno de los casos.
  * Cada lenguaje sigue una convenciones que debes de respetar para que el código se entienda.
 """
+
+def roadmap(texto1, texto2):
+
+    numero=[]
+    for i in range(1, 101):
+        if i % 3 == 0 and i % 5 == 0:
+            print(f'{texto1}{texto2}')
+        elif i % 3 == 0:
+            print(texto1)
+        elif i % 5 == 0:
+            print(texto2)
+        else:
+            numero.append(i)
+            print(i)
+
+    return f'Hay {len(numero)} numeros'
+
+
+
+print(roadmap('fizz', 'buzz'))
