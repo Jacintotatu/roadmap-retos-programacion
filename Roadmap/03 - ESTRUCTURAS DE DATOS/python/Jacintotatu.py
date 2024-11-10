@@ -10,16 +10,16 @@
 
 print('Hola, bienvenido a tu agenda')
 print("""Elige que quieres hacer:
-*Buscar
-*Insertar
-*Eliminar contacto
+1.-Buscar
+2.-Insertar
+3.-Eliminar contacto
 """)
 
-eleccion=input()
+eleccion=int(input())
 
 contactos={}
 
-if eleccion.capitalize() == 'Insertar':
+if eleccion == 2:
     nombre = input('Nombre: ')
     telefono = int(input('Teléfono: '))
     contactos[nombre]=telefono
